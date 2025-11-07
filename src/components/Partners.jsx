@@ -47,7 +47,7 @@ function Partners() {
               rel="noreferrer"
               className="group flex h-full flex-col items-center gap-4 rounded-2xl border border-white/20 bg-white/10 p-6 text-center shadow-card transition hover:border-teal/70 hover:bg-white/20"
             >
-              <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-teal/50 bg-white p-4 shadow-xl">
+              <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-teal/60 bg-white/90 p-4 shadow-xl">
                 <img
                   src={partner.logo}
                   alt={`${partner.name} logo`}
