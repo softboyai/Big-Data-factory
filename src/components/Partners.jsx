@@ -6,29 +6,22 @@ const partners = [
   {
     name: 'University of Rwanda',
     logo: urLogo,
-    link: 'https://www.ur.ac.rw/'
+    link: 'https://www.ur.ac.rw/',
+    badgeClass: 'bg-[#0B3A65]'
   },
   {
     name: 'National Institute of Statistics of Rwanda (NISR)',
     logo: nisrLogo,
-    link: 'https://statistics.gov.rw/'
+    link: 'https://statistics.gov.rw/',
+    badgeClass: 'bg-[#0C4C6A]'
   },
   {
     name: 'Norsken Kigali House',
     logo: norskenLogo,
-    link: 'https://www.norsken.org/kigali'
+    link: 'https://www.norsken.org/kigali',
+    badgeClass: 'bg-black'
   }
 ];
-
-function getInitials(name) {
-  return name
-    .split(' ')
-    .filter(Boolean)
-    .map((word) => word[0])
-    .join('')
-    .slice(0, 3)
-    .toUpperCase();
-}
 
 function Partners() {
   return (
@@ -47,10 +40,13 @@ function Partners() {
               rel="noreferrer"
               className="group flex h-full flex-col items-center gap-4 rounded-2xl border border-white/20 bg-white/10 p-6 text-center shadow-card transition hover:border-teal/70 hover:bg-white/20"
             >
-              <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-teal/60 bg-white/90 p-4 shadow-xl">
+              <div
+                className={`flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-white/40 p-4 shadow-xl ${partner.badgeClass}`}
+              >
                 <img
                   src={partner.logo}
                   alt={`${partner.name} logo`}
+                  loading="lazy"
                   className="h-full w-full object-contain"
                 />
                 </div>

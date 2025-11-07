@@ -18,6 +18,7 @@ function Header() {
           <img
             src={logo}
             alt="Big Data Factory Merit logo"
+            loading="lazy"
             className="h-10 w-auto rounded-full border border-white/30 shadow"
           />
           <div className="flex flex-col leading-none">

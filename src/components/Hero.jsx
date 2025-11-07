@@ -34,6 +34,7 @@ function Hero() {
             <img
               src={logo}
               alt="Big Data Factory Merit emblem"
+              loading="lazy"
               className="mx-auto h-28 w-auto rounded-xl border border-white/30 object-cover"
             />
             <p className="mt-6 text-sm font-medium uppercase tracking-wide text-teal">Program Highlights</p>
