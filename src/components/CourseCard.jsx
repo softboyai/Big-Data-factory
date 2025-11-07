@@ -1,11 +1,11 @@
 import { GOOGLE_FORM_URL } from '../constants/forms.js';
 
 function formatPrice(value) {
-  return new Intl.NumberFormat('en-RW', {
-    style: 'currency',
-    currency: 'RWF',
+  const formatted = new Intl.NumberFormat('en-RW', {
+    minimumFractionDigits: 0,
     maximumFractionDigits: 0
   }).format(value);
+  return `${formatted} RWF`;
 }
 
 function CourseCard({ course, onViewCourse }) {
