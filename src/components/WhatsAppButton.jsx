@@ -1,5 +1,6 @@
 const whatsappNumber = '250785116487';
-const whatsappMessage = 'Hello Big Data Factory, I would like to learn more about your courses.';
+const whatsappMessage =
+  'Hello Big Data Factory Merit, I would like to learn more about your big data and analytics courses.';
 
 function WhatsAppButton() {
   const handleClick = () => {

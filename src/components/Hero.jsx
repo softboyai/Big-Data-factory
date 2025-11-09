@@ -8,10 +8,10 @@ function Hero() {
         <div className="max-w-2xl text-center md:text-left">
           <p className="text-sm uppercase tracking-[0.3em] text-teal">Big Data Factory Merit</p>
           <h1 className="mt-4 text-4xl font-bold leading-tight md:text-5xl">
-            Learn Data & AI Skills in Rwanda
+            Learn Big Data & AI Skills in Rwanda
           </h1>
           <p className="mt-6 text-lg text-slate-200">
-            Gain job-ready training in data analytics, machine learning, and business intelligence. Practical labs, certified mentors, and small cohorts in Kigali.
+            Gain job-ready training in big data engineering, machine learning, monitoring and evaluation, and business intelligence. Practical labs, certified mentors, and small cohorts in Kigali.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
             <Link
