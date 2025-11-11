@@ -33,8 +33,13 @@ function TeamSection() {
               key={member.name}
               className="flex flex-col items-center rounded-3xl border border-white/10 bg-white/10 p-8 text-center shadow-card backdrop-blur transition hover:border-teal/70 hover:bg-white/20"
             >
-              <div className="h-32 w-32 overflow-hidden rounded-full border border-teal/60 bg-white/10 shadow-xl">
-                <img src={member.image} alt={member.name} loading="lazy" className="h-full w-full object-cover" />
+              <div className="h-40 w-40 overflow-hidden rounded-3xl border border-teal/60 bg-white/5 shadow-xl md:h-48 md:w-48">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  loading="lazy"
+                  className="h-full w-full object-cover object-top"
+                />
               </div>
               <h3 className="mt-6 text-xl font-semibold text-white">{member.name}</h3>
               <p className="text-sm uppercase tracking-wide text-teal">{member.title}</p>
