@@ -5,8 +5,17 @@ function CourseModal({ course, onClose }) {
   if (!course) return null;
 
   const handleRegister = () => {
+    if (course.registrationLink) {
+      window.open(course.registrationLink, '_blank');
+      return;
+    }
     window.open(`${GOOGLE_FORM_URL}${encodeURIComponent(course.name)}`, '_blank');
   };
+
+  const priceLabel =
+    course.price === undefined || course.price === null
+      ? null
+      : `${new Intl.NumberFormat('en-RW').format(course.price)} RWF`;
 
   return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/70 px-6">
@@ -24,7 +33,7 @@ function CourseModal({ course, onClose }) {
         <h3 className="mt-2 text-3xl font-semibold text-navy">{course.name}</h3>
         <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-600">
           <span className="font-semibold text-navy">Duration: {course.hours} hours</span>
-          <span>Investment: {new Intl.NumberFormat('en-RW').format(course.price)} RWF</span>
+          {priceLabel && <span>Investment: {priceLabel}</span>}
         </div>
         <p className="mt-6 text-slate-600">{course.description}</p>
         <div className="mt-6">

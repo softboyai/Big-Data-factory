@@ -1,5 +1,21 @@
 export const courses = [
   {
+    id: 0,
+    name: 'AI Basic Tool Training – Registration',
+    hours: 12,
+    price: null,
+    difficulty: 'Beginner',
+    summary: 'Kick-start your journey with essential AI productivity and analytics tools.',
+    description:
+      'Discover the core AI assistants, prompt workflows, and automation techniques used in analytics teams. Practice translating business questions into AI-ready tasks, integrating results into spreadsheets, and collaborating securely.',
+    outcomes: [
+      'Use leading AI assistants to summarize data and generate insights',
+      'Design prompts that support research, reporting, and dashboard creation',
+      'Implement responsible AI usage guidelines within your organization'
+    ],
+    registrationLink: 'https://forms.gle/vu4hLBzWN3iPajH36'
+  },
+  {
     id: 1,
     name: 'Python for Data Analytics and Machine Learning',
     hours: 40,
