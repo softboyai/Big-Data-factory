@@ -12,11 +12,6 @@ function CourseModal({ course, onClose }) {
     window.open(`${GOOGLE_FORM_URL}${encodeURIComponent(course.name)}`, '_blank');
   };
 
-  const priceLabel =
-    course.price === undefined || course.price === null
-      ? null
-      : `${new Intl.NumberFormat('en-RW').format(course.price)} RWF`;
-
   return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/70 px-6">
       <div className="relative w-full max-w-3xl rounded-3xl bg-white p-8 shadow-2xl">
@@ -31,11 +26,29 @@ function CourseModal({ course, onClose }) {
           {course.difficulty}
         </div>
         <h3 className="mt-2 text-3xl font-semibold text-navy">{course.name}</h3>
-        <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-600">
-          <span className="font-semibold text-navy">Duration: {course.hours} hours</span>
-          {priceLabel && <span>Investment: {priceLabel}</span>}
-        </div>
         <p className="mt-6 text-slate-600">{course.description}</p>
+        <div className="mt-6 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
+          {course.facilitator && (
+            <div>
+              <span className="font-semibold text-navy">Facilitator:</span> {course.facilitator}
+            </div>
+          )}
+          {course.audience && (
+            <div>
+              <span className="font-semibold text-navy">Audience:</span> {course.audience}
+            </div>
+          )}
+          {course.capacity && (
+            <div>
+              <span className="font-semibold text-navy">Capacity:</span> {course.capacity} participants
+            </div>
+          )}
+          {course.requirements && (
+            <div>
+              <span className="font-semibold text-navy">Requirements:</span> {course.requirements}
+            </div>
+          )}
+        </div>
         <div className="mt-6">
           <p className="text-sm font-semibold uppercase tracking-wide text-navy">You will be able to:</p>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-600">

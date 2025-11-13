@@ -1,19 +1,26 @@
 export const courses = [
   {
     id: 0,
-    name: 'AI Basic Tool Training – Registration',
-    hours: 12,
+    name: 'Master Data Management and Analysis with AI Tools',
+    hours: 20,
     price: null,
     difficulty: 'Beginner',
-    summary: 'Kick-start your journey with essential AI productivity and analytics tools.',
+    summary: 'Five-day immersive bootcamp leveraging AI for data management, storytelling, and creative content.',
     description:
-      'Discover the core AI assistants, prompt workflows, and automation techniques used in analytics teams. Practice translating business questions into AI-ready tasks, integrating results into spreadsheets, and collaborating securely.',
+      'This 5-day practical workshop equips youth and graduates with hands-on experience using AI-powered tools for data management, analysis, reporting, and multimedia content creation. Participants learn to apply responsible AI practices while generating insights, visuals, and short videos for community and business projects.',
     outcomes: [
-      'Use leading AI assistants to summarize data and generate insights',
-      'Design prompts that support research, reporting, and dashboard creation',
-      'Implement responsible AI usage guidelines within your organization'
+      'Understand AI foundations, ethics, and responsible usage guidelines',
+      'Use AI assistants to clean data, analyze trends, and draft reports',
+      'Create written summaries, translations, and campaigns with AI text tools',
+      'Design visuals using Canva AI, Leonardo AI, and Bing Image Creator',
+      'Produce short-form videos and narratives using CapCut AI, HeyGen, and Vrew',
+      'Plan and deliver AI-enabled projects tailored to Musanze youth initiatives'
     ],
-    registrationLink: 'https://forms.gle/vu4hLBzWN3iPajH36'
+    registrationLink: 'https://forms.gle/vu4hLBzWN3iPajH36',
+    facilitator: 'Felix Gasasira – Data Analyst & Data Scientist',
+    capacity: 30,
+    requirements: 'Laptop or smartphone with reliable internet access',
+    audience: 'Secondary school and university alumni (Musanze District, Rwanda)'
   },
   {
     id: 1,
