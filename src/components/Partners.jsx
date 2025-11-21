@@ -1,6 +1,7 @@
 import urLogo from '../images/ur logo.png';
 import nisrLogo from '../images/nisr.png';
 import norskenLogo from '../images/GoOnlineTools-image-downloader.svg';
+import novacoreLogo from '../images/novacore.png';
 
 const partners = [
   {
@@ -20,6 +21,12 @@ const partners = [
     logo: norskenLogo,
     link: 'https://www.norsken.org/kigali',
     badgeClass: 'bg-black'
+  },
+  {
+    name: 'NovaCore Hub',
+    logo: novacoreLogo,
+    link: 'https://novacorehub.com/',
+    badgeClass: 'bg-white'
   }
 ];
 
@@ -31,7 +38,7 @@ function Partners() {
           <p className="text-xs uppercase tracking-[0.3em] text-teal">Community</p>
           <h2 className="text-3xl font-semibold">Partners and collaborators</h2>
         </div>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {partners.map((partner) => (
             <a
               key={partner.name}
